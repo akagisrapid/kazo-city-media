@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98A4791A29DDA38C00920857 /* kazo_city_mediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A4791929DDA38C00920857 /* kazo_city_mediaApp.swift */; };
+		98A4791C29DDA38C00920857 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A4791B29DDA38C00920857 /* ContentView.swift */; };
+		98A4791E29DDA38D00920857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98A4791D29DDA38D00920857 /* Assets.xcassets */; };
+		98A4792229DDA38D00920857 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98A4792129DDA38D00920857 /* Preview Assets.xcassets */; };
+		98A4792C29DDA38D00920857 /* kazo_city_mediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A4792B29DDA38D00920857 /* kazo_city_mediaTests.swift */; };
+		98A4793629DDA38D00920857 /* kazo_city_mediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A4793529DDA38D00920857 /* kazo_city_mediaUITests.swift */; };
+		98A4793829DDA38D00920857 /* kazo_city_mediaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A4793729DDA38D00920857 /* kazo_city_mediaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98A4792829DDA38D00920857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98A4790E29DDA38C00920857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A4791529DDA38C00920857;
+			remoteInfo = "kazo-city-media";
+		};
+		98A4793229DDA38D00920857 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98A4790E29DDA38C00920857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A4791529DDA38C00920857;
+			remoteInfo = "kazo-city-media";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98A4791629DDA38C00920857 /* kazo-city-media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kazo-city-media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A4791929DDA38C00920857 /* kazo_city_mediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kazo_city_mediaApp.swift; sourceTree = "<group>"; };
+		98A4791B29DDA38C00920857 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		98A4791D29DDA38D00920857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98A4791F29DDA38D00920857 /* kazo_city_media.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kazo_city_media.entitlements; sourceTree = "<group>"; };
+		98A4792129DDA38D00920857 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		98A4792729DDA38D00920857 /* kazo-city-mediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kazo-city-mediaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A4792B29DDA38D00920857 /* kazo_city_mediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kazo_city_mediaTests.swift; sourceTree = "<group>"; };
+		98A4793129DDA38D00920857 /* kazo-city-mediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kazo-city-mediaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A4793529DDA38D00920857 /* kazo_city_mediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kazo_city_mediaUITests.swift; sourceTree = "<group>"; };
+		98A4793729DDA38D00920857 /* kazo_city_mediaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kazo_city_mediaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98A4791329DDA38C00920857 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A4792429DDA38D00920857 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A4792E29DDA38D00920857 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98A4790D29DDA38C00920857 = {
+			isa = PBXGroup;
+			children = (
+				98A4791829DDA38C00920857 /* kazo-city-media */,
+				98A4792A29DDA38D00920857 /* kazo-city-mediaTests */,
+				98A4793429DDA38D00920857 /* kazo-city-mediaUITests */,
+				98A4791729DDA38C00920857 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98A4791729DDA38C00920857 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98A4791629DDA38C00920857 /* kazo-city-media.app */,
+				98A4792729DDA38D00920857 /* kazo-city-mediaTests.xctest */,
+				98A4793129DDA38D00920857 /* kazo-city-mediaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98A4791829DDA38C00920857 /* kazo-city-media */ = {
+			isa = PBXGroup;
+			children = (
+				98A4791929DDA38C00920857 /* kazo_city_mediaApp.swift */,
+				98A4791B29DDA38C00920857 /* ContentView.swift */,
+				98A4791D29DDA38D00920857 /* Assets.xcassets */,
+				98A4791F29DDA38D00920857 /* kazo_city_media.entitlements */,
+				98A4792029DDA38D00920857 /* Preview Content */,
+			);
+			path = "kazo-city-media";
+			sourceTree = "<group>";
+		};
+		98A4792029DDA38D00920857 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				98A4792129DDA38D00920857 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		98A4792A29DDA38D00920857 /* kazo-city-mediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				98A4792B29DDA38D00920857 /* kazo_city_mediaTests.swift */,
+			);
+			path = "kazo-city-mediaTests";
+			sourceTree = "<group>";
+		};
+		98A4793429DDA38D00920857 /* kazo-city-mediaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98A4793529DDA38D00920857 /* kazo_city_mediaUITests.swift */,
+				98A4793729DDA38D00920857 /* kazo_city_mediaUITestsLaunchTests.swift */,
+			);
+			path = "kazo-city-mediaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98A4791529DDA38C00920857 /* kazo-city-media */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98A4793B29DDA38D00920857 /* Build configuration list for PBXNativeTarget "kazo-city-media" */;
+			buildPhases = (
+				98A4791229DDA38C00920857 /* Sources */,
+				98A4791329DDA38C00920857 /* Frameworks */,
+				98A4791429DDA38C00920857 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kazo-city-media";
+			productName = "kazo-city-media";
+			productReference = 98A4791629DDA38C00920857 /* kazo-city-media.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98A4792629DDA38D00920857 /* kazo-city-mediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98A4793E29DDA38D00920857 /* Build configuration list for PBXNativeTarget "kazo-city-mediaTests" */;
+			buildPhases = (
+				98A4792329DDA38D00920857 /* Sources */,
+				98A4792429DDA38D00920857 /* Frameworks */,
+				98A4792529DDA38D00920857 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98A4792929DDA38D00920857 /* PBXTargetDependency */,
+			);
+			name = "kazo-city-mediaTests";
+			productName = "kazo-city-mediaTests";
+			productReference = 98A4792729DDA38D00920857 /* kazo-city-mediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98A4793029DDA38D00920857 /* kazo-city-mediaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98A4794129DDA38D00920857 /* Build configuration list for PBXNativeTarget "kazo-city-mediaUITests" */;
+			buildPhases = (
+				98A4792D29DDA38D00920857 /* Sources */,
+				98A4792E29DDA38D00920857 /* Frameworks */,
+				98A4792F29DDA38D00920857 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98A4793329DDA38D00920857 /* PBXTargetDependency */,
+			);
+			name = "kazo-city-mediaUITests";
+			productName = "kazo-city-mediaUITests";
+			productReference = 98A4793129DDA38D00920857 /* kazo-city-mediaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98A4790E29DDA38C00920857 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					98A4791529DDA38C00920857 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					98A4792629DDA38D00920857 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 98A4791529DDA38C00920857;
+					};
+					98A4793029DDA38D00920857 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 98A4791529DDA38C00920857;
+					};
+				};
+			};
+			buildConfigurationList = 98A4791129DDA38C00920857 /* Build configuration list for PBXProject "kazo-city-media" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98A4790D29DDA38C00920857;
+			productRefGroup = 98A4791729DDA38C00920857 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98A4791529DDA38C00920857 /* kazo-city-media */,
+				98A4792629DDA38D00920857 /* kazo-city-mediaTests */,
+				98A4793029DDA38D00920857 /* kazo-city-mediaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98A4791429DDA38C00920857 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A4792229DDA38D00920857 /* Preview Assets.xcassets in Resources */,
+				98A4791E29DDA38D00920857 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A4792529DDA38D00920857 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A4792F29DDA38D00920857 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98A4791229DDA38C00920857 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A4791C29DDA38C00920857 /* ContentView.swift in Sources */,
+				98A4791A29DDA38C00920857 /* kazo_city_mediaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A4792329DDA38D00920857 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A4792C29DDA38D00920857 /* kazo_city_mediaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A4792D29DDA38D00920857 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A4793629DDA38D00920857 /* kazo_city_mediaUITests.swift in Sources */,
+				98A4793829DDA38D00920857 /* kazo_city_mediaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98A4792929DDA38D00920857 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98A4791529DDA38C00920857 /* kazo-city-media */;
+			targetProxy = 98A4792829DDA38D00920857 /* PBXContainerItemProxy */;
+		};
+		98A4793329DDA38D00920857 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98A4791529DDA38C00920857 /* kazo-city-media */;
+			targetProxy = 98A4793229DDA38D00920857 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		98A4793929DDA38D00920857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98A4793A29DDA38D00920857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		98A4793C29DDA38D00920857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "kazo-city-media/kazo_city_media.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kazo-city-media/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shuya.kazo-city-media";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98A4793D29DDA38D00920857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "kazo-city-media/kazo_city_media.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kazo-city-media/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shuya.kazo-city-media";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98A4793F29DDA38D00920857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shuya.kazo-city-mediaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kazo-city-media.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kazo-city-media";
+			};
+			name = Debug;
+		};
+		98A4794029DDA38D00920857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shuya.kazo-city-mediaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kazo-city-media.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/kazo-city-media";
+			};
+			name = Release;
+		};
+		98A4794229DDA38D00920857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shuya.kazo-city-mediaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kazo-city-media";
+			};
+			name = Debug;
+		};
+		98A4794329DDA38D00920857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shuya.kazo-city-mediaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kazo-city-media";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98A4791129DDA38C00920857 /* Build configuration list for PBXProject "kazo-city-media" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98A4793929DDA38D00920857 /* Debug */,
+				98A4793A29DDA38D00920857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98A4793B29DDA38D00920857 /* Build configuration list for PBXNativeTarget "kazo-city-media" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98A4793C29DDA38D00920857 /* Debug */,
+				98A4793D29DDA38D00920857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98A4793E29DDA38D00920857 /* Build configuration list for PBXNativeTarget "kazo-city-mediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98A4793F29DDA38D00920857 /* Debug */,
+				98A4794029DDA38D00920857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98A4794129DDA38D00920857 /* Build configuration list for PBXNativeTarget "kazo-city-mediaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98A4794229DDA38D00920857 /* Debug */,
+				98A4794329DDA38D00920857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98A4790E29DDA38C00920857 /* Project object */;
+}
