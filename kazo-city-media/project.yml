@@ -1,0 +1,16 @@
+name: kazo-city-media
+settings:
+ base:
+  MARKETING_VERSION: 1.0.0
+  CURRENT_PROJECT_VERSION: 1.0
+  PRODUCT_BUNDLE_IDENTIFIER: KazoCityMedia
+  DEVELOPMENT_TEAM: TPXR4FNVUK
+
+targets:
+  kazo-city-media:
+    sources:
+      - kazo-city-media
+    type: application
+    platform: iOS
+    path: kazo-city-media/Info.plist
+
