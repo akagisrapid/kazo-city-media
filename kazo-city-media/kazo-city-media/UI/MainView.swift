@@ -10,14 +10,97 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         NavigationStack{
-            
-            LatestNewsView()
-            CategorySelectView()
-            FeatureSelectView()
-            WritersSelectView()
-            MylistSelectView()
+            HStack{
+                Button(action:{}){
+                    Text("新着News").lineLimit(1).minimumScaleFactor(0.4)
+                }
+                .padding(.all)
+                .overlay(
+                    RoundedRectangle(
+                        cornerRadius: 5)
+                    .stroke(Color.blue,lineWidth: 1)
+                )
+                
+                    Button(action:{}){
+                        Text("Category").lineLimit(1).minimumScaleFactor(0.4)
+                    }
+                    .padding(.all)
+                    .overlay(
+                        RoundedRectangle(
+                            cornerRadius: 5)
+                        .stroke(Color.blue,lineWidth: 1)
+                    )
+                
+                    Button(action:{}){
+                        Text("Feature").lineLimit(1).minimumScaleFactor(0.4)
+                    }
+                    .padding(.all)
+                    .overlay(
+                        RoundedRectangle(
+                            cornerRadius: 5)
+                        .stroke(Color.blue,lineWidth: 1)
+                    )
+                
+                    Button(action:{}){
+                        Text("Writer's").lineLimit(1).minimumScaleFactor(0.4)
+                    }
+                    .padding(.all)
+                    .overlay(
+                        RoundedRectangle(
+                            cornerRadius: 5)
+                        .stroke(Color.blue,lineWidth: 1)
+                    )
+            }
+            List{
+                
+                LatestNewsView()
+                CategorySelectView()
+                FeatureSelectView()
+                WritersSelectView()
+                MylistSelectView()
+            }
+            .navigationTitle("かぞっこ")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Button(action:{
+                        // 検索
+                    }){
+                        Image(systemName: "magnifyingglass")
+                    }
+                }
+                ToolbarItemGroup(placement: .bottomBar){
+                    Button(action:{
+                        
+                    }){
+                        VStack{
+                            Image(systemName: "house")
+                            Text("ホーム")
+                        }
+                    }
+                        Spacer()
+                    Button(action:{
+                        
+                    }){
+                        VStack{
+                            Image(systemName: "flame")
+                            Text("新着＆急上昇")
+                        }
+                    }
+                        Spacer()
+                    Button(action:{
+                        
+                    }){
+                        VStack{
+                            Image(systemName: "doc")
+                            Text("掲載＆募集")
+                        }
+                    }
+                }
+            }
         }
-        .navigationBarTitle("かぞっこ")
+        
     }
 }
 
