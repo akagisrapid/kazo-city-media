@@ -9,22 +9,29 @@ import SwiftUI
 
 struct LatestNewsView: View {
     var body: some View {
+        Image("LatestNews")
+            .resizable()
+            .scaledToFit()
+            .overlay{
         VStack{
-            Text("新着News!").padding()
-            HStack{
-                Button(action: {
-                    
-                }){
-                    Label("詳細",systemImage: "play.fill")
-                }
-                Button(action: {
-                    
-                }){
-                    Label("マイリスト",systemImage: "list.bullet")
-                }
-            }.buttonStyle(.bordered)
+            Text("新着News!").foregroundColor(.white).padding(.top, 50.0)
+            Spacer()
+                HStack{
+                    Button(action: {
+                        
+                    }){
+                        Label("詳細",systemImage: "play.fill")
+                    }.background(Color.white)
+                    Button(action: {
+                        
+                    }){
+                        Label("マイリスト",systemImage: "list.bullet")
+                    }
+                    .background(Color.gray)
+                }.buttonStyle(.bordered)
+                .padding(.bottom,40.0)
+            }
         }
-        
     }
 }
 

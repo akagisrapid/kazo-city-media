@@ -24,6 +24,7 @@ struct MainView: View {
                     Button(action:{}){
                         Text("Category").lineLimit(1).minimumScaleFactor(0.4)
                     }
+                    
                     .padding(.all)
                     .overlay(
                         RoundedRectangle(
@@ -51,8 +52,8 @@ struct MainView: View {
                         .stroke(Color.blue,lineWidth: 1)
                     )
             }
+            
             List{
-                
                 LatestNewsView()
                 CategorySelectView()
                 FeatureSelectView()
