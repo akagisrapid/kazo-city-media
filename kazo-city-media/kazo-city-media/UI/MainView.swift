@@ -12,43 +12,50 @@ struct MainView: View {
         NavigationStack{
             HStack{
                 Button(action:{}){
-                    Text("新着News").lineLimit(1).minimumScaleFactor(0.4)
+                    Text("新着News")
+                        .fontWeight(.semibold)
+                        .frame(width: 80, height: 40)
+                        .cornerRadius(20)
                 }
-                .padding(.all)
                 .overlay(
                     RoundedRectangle(
-                        cornerRadius: 5)
+                        cornerRadius: 20)
                     .stroke(Color.blue,lineWidth: 1)
                 )
                 
                     Button(action:{}){
-                        Text("Category").lineLimit(1).minimumScaleFactor(0.4)
+                        Text("Category")
+                            .fontWeight(.semibold)
+                            .frame(width: 80, height: 40)
+                            .cornerRadius(20)
                     }
-                    
-                    .padding(.all)
                     .overlay(
                         RoundedRectangle(
-                            cornerRadius: 5)
+                            cornerRadius: 20)
                         .stroke(Color.blue,lineWidth: 1)
                     )
                 
                     Button(action:{}){
-                        Text("Feature").lineLimit(1).minimumScaleFactor(0.4)
+                        Text("Feature")
+                            .fontWeight(.semibold)
+                            .frame(width: 80, height: 40)
+                            .cornerRadius(20)
                     }
-                    .padding(.all)
                     .overlay(
                         RoundedRectangle(
-                            cornerRadius: 5)
+                            cornerRadius: 20)
                         .stroke(Color.blue,lineWidth: 1)
                     )
                 
                     Button(action:{}){
-                        Text("Writer's").lineLimit(1).minimumScaleFactor(0.4)
+                        Text("Writer's")
+                            .fontWeight(.semibold)
+                            .frame(width: 80, height: 40)
+                            .cornerRadius(20)
                     }
-                    .padding(.all)
                     .overlay(
                         RoundedRectangle(
-                            cornerRadius: 5)
+                            cornerRadius: 20)
                         .stroke(Color.blue,lineWidth: 1)
                     )
             }
