@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct CategorySelectView: View {
+    @State var cat = categories
     var body: some View {
-        Text("CATEGORY（知りたいを探す）")
+        VStack{
+            Text("CATEGORY（知りたいを探す）")
+            
+            ScrollView(.horizontal,showsIndicators: false){
+                HStack{
+                    ForEach($cat){ category in
+                        CategoryView(categoryModel: category)
+                    }
+                }
+            }
+        }
     }
 }
 
