@@ -11,26 +11,34 @@ struct LatestNewsView: View {
     var body: some View {
         Image("LatestNews")
             .resizable()
-            .scaledToFit()
+            .aspectRatio(contentMode: .fill)
+            .clipped()
             .overlay{
-        VStack{
-            Text("新着News!").foregroundColor(.white).padding(.top, 50.0)
-            Spacer()
-                HStack{
-                    Button(action: {
+                VStack{
+                    Text("新着News!")
+                        .foregroundColor(.white)
+                        .padding()
+                    Spacer()
+                    HStack{
+                        Button(action: {
+                            
+                        }){
+                            Image(systemName:"play.fill")
+                            Text("詳細").lineLimit(1)
+                        }
+                        .background(Color.white)
                         
-                    }){
-                        Label("詳細",systemImage: "play.fill")
-                    }.background(Color.white)
-                    Button(action: {
-                        
-                    }){
-                        Label("マイリスト",systemImage: "list.bullet")
+                        Button(action: {
+                            
+                        }){
+                            Image(systemName:"list.bullet")
+                            Text("マイリスト").lineLimit(1)
+                        }
+                        .background(Color.gray)
                     }
-                    .background(Color.gray)
-                }.buttonStyle(.bordered)
-                .padding(.bottom,40.0)
-            }
+                    .buttonStyle(.bordered)
+                    .padding()
+                }
         }
     }
 }
