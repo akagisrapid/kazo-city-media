@@ -1,15 +1,19 @@
-//
-//  WritersSelectView.swift
-//  kazo-city-media
-//
-//  Created by shuya on 2023/04/07.
-//
-
 import SwiftUI
 
 struct WritersSelectView: View {
+    @State var _writers = writers
     var body: some View {
+        VStack{
         Text("WRITER'S（連載記事・コラム）")
+        
+        ScrollView(.horizontal,showsIndicators: false){
+            HStack{
+                ForEach($_writers){ writer in
+                    WriterView(writerModel: writer)
+                }
+            }
+        }
+    }
     }
 }
 
