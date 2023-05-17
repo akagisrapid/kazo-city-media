@@ -1,11 +1,18 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:kazo_city_media/UI/category.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+// void main() {
+//   runApp(const MyApp());
+// }
+void main() => runApp(
+  DevicePreview(
+    builder: (context) => MyApp(), 
+  ),
+);
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
