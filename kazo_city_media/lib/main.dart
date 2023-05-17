@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:kazo_city_media/UI/category.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,6 +35,11 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  var categories = [
+    CategoryModel(name: "おでかけ・スポット", imageUri: 'images/odekake_spot.png'),
+    CategoryModel(name: "グルメ・カフェ", imageUri: 'images/gourmet_cafe.png'),
+    CategoryModel(name: "美容室・サロン", imageUri: 'images/salon.png')
+  ];
 
   void _incrementCounter() {
     setState(() {
@@ -115,9 +121,15 @@ class _MyHomePageState extends State<MyHomePage> {
                         ],
                       )
                   ],
-                )
+                ),
+
                 ]
             ),
+
+                Row(
+                  children: categories.map((e) => Category(category: e)).toList()
+                  )
+
           ]
         ),
       ),
