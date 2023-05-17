@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   var categories = [
     CategoryModel(name: "おでかけ・スポット", imageUri: 'images/odekake_spot.png'),
     CategoryModel(name: "グルメ・カフェ", imageUri: 'images/gourmet_cafe.png'),
-    CategoryModel(name: "美容室・サロン", imageUri: 'images/salon.png')
+    CategoryModel(name: "美容室・サロン", imageUri: 'images/salon.png'),
   ];
 
   void _incrementCounter() {
@@ -132,10 +132,27 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 ]
             ),
+Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+  Container(
+    alignment: Alignment.centerLeft,
+    child: Text(
+      'CATEGORY（知りたいを探す）',
+      style: TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        color: Colors.black,
+      )
+    )
+  ),
 
                 Row(
                   children: categories.map((e) => Category(category: e)).toList()
                   )
+],
+
+)
 
           ]
         ),
