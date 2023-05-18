@@ -8,11 +8,10 @@ import 'package:kazo_city_media/UI/category.dart';
 //   runApp(const MyApp());
 // }
 void main() => runApp(
-  DevicePreview(
-    builder: (context) => MyApp(), 
-  ),
-);
-
+      DevicePreview(
+        builder: (context) => MyApp(),
+      ),
+    );
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -56,100 +55,83 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
         title: Image.asset('images/titlelogo.png'),
-        actions:[
+        actions: [
           IconButton(
-            icon:Icon(Icons.search),
+            icon: Icon(Icons.search),
             color: Colors.white,
             onPressed: () => {},
           )
         ],
       ),
       body: Center(
-        child: Column(
-          children:[
-            Stack(
-              alignment: AlignmentDirectional.center,
-              children: <Widget>[
+        child: Column(children: [
+          Stack(alignment: AlignmentDirectional.center, children: <Widget>[
+            Container(
+                alignment: Alignment.center,
+                child: Image.asset('images/news.png')),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
                 Container(
-                  alignment: Alignment.center,
-                  child: Image.asset('images/news.png')
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                    alignment: Alignment.topCenter,
+                    child: Text('新着News!!',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ))),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                    alignment: Alignment.topCenter,
-                    child: Text(
-                    '新着News!!',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                    )
-                    )
-                  ), 
-                  
-                  Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
                         alignment: Alignment.bottomCenter,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                    onPressed: () {},
-                    child: Text('詳細'),
-                    )
-                ),
-                      Container(
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                          onPressed: () {},
+                          child: Text('詳細'),
+                        )),
+                    Container(
                         alignment: Alignment.bottomCenter,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                    onPressed: () {},
-                    child: Text('マイリスト'),
-                    )
-                )
-                        ],
-                      )
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
+                          onPressed: () {},
+                          child: Text('マイリスト'),
+                        ))
                   ],
-                ),
-
-                ]
+                )
+              ],
             ),
-Column(
-  mainAxisAlignment: MainAxisAlignment.center,
-  children: [
-  Container(
-    alignment: Alignment.centerLeft,
-    child: Text(
-      'CATEGORY（知りたいを探す）',
-      style: TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
-        color: Colors.black,
-      )
-    )
-  ),
-  Scrollbar(
-    child: SingleChildScrollView(
-    scrollDirection: Axis.horizontal,
-    child: Row(
-    children: categories.map((e) => CategoryItem(category: e)).toList()
-    )
-    )
-  )
-],
-)
-]
-),
-),
-);
+          ]),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                  alignment: Alignment.centerLeft,
+                  child: Text('CATEGORY（知りたいを探す）',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ))),
+              Scrollbar(
+                  child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                          children: categories
+                              .map((e) => CategoryItem(category: e))
+                              .toList())))
+            ],
+          )
+        ]),
+      ),
+    );
   }
 }
