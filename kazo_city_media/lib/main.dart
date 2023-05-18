@@ -64,7 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: Center(
-        child: Column(children: [
+        child: SingleChildScrollView(
+          child: Column(children: [
           Stack(alignment: AlignmentDirectional.center, children: <Widget>[
             Container(
                 alignment: Alignment.center,
@@ -132,6 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
           )
         ]),
       ),
+      )
     );
   }
 }
