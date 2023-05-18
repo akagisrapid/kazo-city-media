@@ -6,10 +6,10 @@ class CategoryModel {
   CategoryModel({required this.name, required this.imageUri});
 }
 
-class Category extends StatelessWidget{
-  Category({Key? key, required CategoryModel category}) : super(key: key);
-
-  final CategoryModel category = CategoryModel(name: "test", imageUri: 'images/odekake_spot.png');
+class CategoryItem extends StatelessWidget{
+  const CategoryItem({super.key,required this.category});
+  final CategoryModel category;
+  
   @override
   Widget build(BuildContext context) {
     return Stack(children: [

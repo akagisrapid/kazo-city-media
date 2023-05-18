@@ -41,23 +41,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
   var categories = [
     CategoryModel(name: "おでかけ・スポット", imageUri: 'images/odekake_spot.png'),
     CategoryModel(name: "グルメ・カフェ", imageUri: 'images/gourmet_cafe.png'),
     CategoryModel(name: "美容室・サロン", imageUri: 'images/salon.png'),
   ];
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -146,10 +134,7 @@ Column(
       )
     )
   ),
-
-                Row(
-                  children: categories.map((e) => Category(category: e)).toList()
-                  )
+  CategoryItem(category: categories[0]),
 ],
 
 )
