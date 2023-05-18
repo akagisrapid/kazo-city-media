@@ -45,6 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
     CategoryModel(name: "おでかけ・スポット", imageUri: 'images/odekake_spot.png'),
     CategoryModel(name: "グルメ・カフェ", imageUri: 'images/gourmet_cafe.png'),
     CategoryModel(name: "美容室・サロン", imageUri: 'images/salon.png'),
+    CategoryModel(name: "美容室・サロン", imageUri: 'images/salon.png'),
+    CategoryModel(name: "美容室・サロン", imageUri: 'images/salon.png'),
+    CategoryModel(name: "美容室・サロン", imageUri: 'images/salon.png'),
   ];
 
   @override
@@ -134,15 +137,19 @@ Column(
       )
     )
   ),
-  CategoryItem(category: categories[0]),
+  Scrollbar(
+    child: SingleChildScrollView(
+    scrollDirection: Axis.horizontal,
+    child: Row(
+    children: categories.map((e) => CategoryItem(category: e)).toList()
+    )
+    )
+  )
 ],
-
 )
-
-          ]
-        ),
-      ),
-
-    );
+]
+),
+),
+);
   }
 }
