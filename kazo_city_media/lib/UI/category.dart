@@ -12,9 +12,21 @@ class CategoryItem extends StatelessWidget{
   
   @override
   Widget build(BuildContext context) {
-    return Stack(children: [
+    return Stack(
+      children: [
         Image.asset(category.imageUri),
-        Text(category.name)
+        Positioned(
+          bottom: 10,
+          left: 10,
+          right: 10,
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: Text(
+              category.name,
+              style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold)
+            )
+          )
+        )
       ],
     );
   }
