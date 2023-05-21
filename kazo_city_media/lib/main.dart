@@ -5,6 +5,8 @@ import 'package:device_preview/device_preview.dart';
 import 'package:kazo_city_media/UI/category.dart';
 import 'package:kazo_city_media/UI/feature.dart';
 
+import 'UI/writer.dart';
+
 // void main() {
 //   runApp(const MyApp());
 // }
@@ -62,6 +64,12 @@ class _MyHomePageState extends State<MyHomePage> {
     comment: "人生には誰にでもドラマがある。\n偶然、今回の役と自分が重なった",
     backgroundColor: Color.fromARGB(0, 11, 11, 11)
     ),
+  ];
+
+  var writers = [
+    WriterModel(name: "戦う社長の奮闘記！",episodeNumber: 12, imageUri: "images/kyoukaigui.png"),
+    WriterModel(name: "済生会加須病院の軌跡", imageUri: "images/kazo_hospital.png", episodeNumber: 5),
+    WriterModel(name: "これが私のかぞ暮らし。", imageUri: 'images/living_in_kazo.png', episodeNumber: 30)
   ];
 
   @override
@@ -166,8 +174,28 @@ class _MyHomePageState extends State<MyHomePage> {
                               .map((e) => FeatureItem(feature: e))
                               .toList())))
             ],
-          )
+          ),
 
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                  alignment: Alignment.centerLeft,
+                  child: Text("WRITER'S（連載記事・コラム）",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ))),
+              Scrollbar(
+                  child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                          children: writers
+                              .map((e) => WriterItem(writer: e))
+                              .toList())))
+            ],
+          ),
 
         ]),
       ),
