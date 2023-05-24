@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:kazo_city_media/UI/category.dart';
 import 'package:kazo_city_media/UI/feature.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:kazo_city_media/UI/latestNews.dart';
 
 import 'UI/writer.dart';
 
@@ -87,54 +89,16 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: Center(
-        child: SingleChildScrollView(
-          child: Column(children: [
-          Stack(alignment: AlignmentDirectional.center, children: <Widget>[
-            Container(
-                alignment: Alignment.center,
-                child: Image.asset('images/news.png')),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                    alignment: Alignment.topCenter,
-                    child: Text('新着News!!',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ))),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                        alignment: Alignment.bottomCenter,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                          onPressed: () {},
-                          child: Text('詳細'),
-                        )),
-                    Container(
-                        alignment: Alignment.bottomCenter,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                          onPressed: () {},
-                          child: Text('マイリスト'),
-                        ))
-                  ],
-                )
-              ],
+        child:SingleChildScrollView(
+          child: Column(
+        children: [
+          Center(
+                  child: CarouselSlider(
+                    options: CarouselOptions(animateToClosest: true, height: 500, viewportFraction: 0.8), 
+                    items: [1,2].map((e) => LatestNewsItem(key: null,)).toList()
+                  )
             ),
-          ]),
-          Column(
+            Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
@@ -198,8 +162,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
 
         ]),
-      ),
       )
-    );
+      )
+      );
   }
 }
