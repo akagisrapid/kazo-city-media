@@ -5,7 +5,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:kazo_city_media/UI/category.dart';
 import 'package:kazo_city_media/UI/feature.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:kazo_city_media/UI/latestNews.dart';
+import 'package:kazo_city_media/UI/latest_news.dart';
 
 import 'UI/writer.dart';
 
