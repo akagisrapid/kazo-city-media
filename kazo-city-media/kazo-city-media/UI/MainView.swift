@@ -10,109 +10,119 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         
-        NavigationStack{
-            HStack{
-                Button(action:{}){
-                    Text("新着News")
-                        .fontWeight(.semibold)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.1)
-                        .padding()
-                }
-                .overlay(
-                    RoundedRectangle(
-                        cornerRadius: 30)
-                    .stroke(Color.blue,lineWidth: 1)
-                )
-                
-                Button(action:{}){
-                    Text("Category")
-                        .fontWeight(.semibold)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.1)
-                        .padding()
-                }
-                .overlay(
-                    RoundedRectangle(
-                        cornerRadius: 30)
-                    .stroke(Color.blue,lineWidth: 1)
-                )
-                
-                Button(action:{}){
-                    Text("Feature")
-                        .fontWeight(.semibold)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.1)
-                        .padding()
-                }
-                .overlay(
-                    RoundedRectangle(
-                        cornerRadius: 30)
-                    .stroke(Color.blue,lineWidth: 1)
-                )
-                Button(action:{}){
-                    Text("Writer's")
-                        .fontWeight(.semibold)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.1)
-                        .padding()
-                }
-                .overlay(
-                    RoundedRectangle(
-                        cornerRadius: 30)
-                    .stroke(Color.blue,lineWidth: 1)
-                )
-            }
-            List{
-                LatestNewsView()
-                CategorySelectView()
-                FeatureSelectView()
-                WritersSelectView()
-                MylistSelectView()
-            }
-            .navigationTitle("かぞっこ")
-            
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar{
-                
-                ToolbarItem(placement: .navigationBarTrailing){
+        ScrollViewReader{ proxy in
+            NavigationStack{
+                HStack{
                     Button(action:{
-                        // 検索
+                        proxy.scrollTo("latestNews")
                     }){
-                        Image(systemName: "magnifyingglass")
+                        Text("新着News")
+                            .fontWeight(.semibold)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.1)
+                            .padding()
                     }
-                }
-                ToolbarItemGroup(placement: .bottomBar){
+                           .overlay(
+                            RoundedRectangle(
+                                cornerRadius: 30)
+                            .stroke(Color.blue,lineWidth: 1)
+                           )
+                    
                     Button(action:{
-                        
+                        proxy.scrollTo("category")})
+                    {
+                        Text("Category")
+                            .fontWeight(.semibold)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.1)
+                            .padding()
+                    }
+                    .overlay(
+                        RoundedRectangle(
+                            cornerRadius: 30)
+                        .stroke(Color.blue,lineWidth: 1)
+                    )
+                    
+                    Button(action:{
+                            proxy.scrollTo("feature")
                     }){
-                        VStack{
-                            Image(systemName: "house")
-                            Text("ホーム")
+                        Text("Feature")
+                            .fontWeight(.semibold)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.1)
+                            .padding()
+                    }
+                    .overlay(
+                        RoundedRectangle(
+                            cornerRadius: 30)
+                        .stroke(Color.blue,lineWidth: 1)
+                    )
+                    Button(action:{
+                            proxy.scrollTo("writers")
+                    }){
+                        Text("Writer's")
+                            .fontWeight(.semibold)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.1)
+                            .padding()
+                    }
+                    .overlay(
+                        RoundedRectangle(
+                            cornerRadius: 30)
+                        .stroke(Color.blue,lineWidth: 1)
+                    )
+                }
+                List{
+                    LatestNewsView().id("latestNews")
+                    CategorySelectView().id("category")
+                    FeatureSelectView().id("feature")
+                    WritersSelectView().id("writers")
+                    MylistSelectView()
+                    
+                }
+                .navigationTitle("かぞっこ")
+                
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar{
+                    
+                    ToolbarItem(placement: .navigationBarTrailing){
+                        Button(action:{
+                            // 検索
+                        }){
+                            Image(systemName: "magnifyingglass")
                         }
                     }
-                        Spacer()
-                    Button(action:{
-                        
-                    }){
-                        VStack{
-                            Image(systemName: "flame")
-                            Text("新着＆急上昇")
+                    ToolbarItemGroup(placement: .bottomBar){
+                        Button(action:{
+                            proxy.scrollTo("latestNews")
+                            
+                        }){
+                            VStack{
+                                Image(systemName: "house")
+                                Text("ホーム")
+                            }
                         }
-                    }
                         Spacer()
-                    Button(action:{
-                        
-                    }){
-                        VStack{
-                            Image(systemName: "doc")
-                            Text("掲載＆募集")
+                        Button(action:{
+                        }){
+                            VStack{
+                                Image(systemName: "flame")
+                                Text("新着＆急上昇")
+                            }
+                        }
+                        Spacer()
+                        Button(action:{
+                            
+                        }){
+                            VStack{
+                                Image(systemName: "doc")
+                                Text("掲載＆募集")
+                            }
                         }
                     }
                 }
             }
         }
-        
     }
 }
 
