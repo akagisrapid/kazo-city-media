@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "774373939139",
+    "project_id": "kazo-city-media",
+    "storage_bucket": "kazo-city-media.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774373939139:android:8e1a51f572d2f41a5f8f76",
+        "android_client_info": {
+          "package_name": "com.example.kazo_city_media"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774373939139-7n4re5cg0emems5rbs73k46l1j7pafv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjpuxt5l_Tjcek-Sj_-CjFjwwX_-_Fukk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774373939139-7n4re5cg0emems5rbs73k46l1j7pafv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
