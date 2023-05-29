@@ -6,6 +6,7 @@ import 'package:kazo_city_media/UI/category.dart';
 import 'package:kazo_city_media/UI/feature.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:kazo_city_media/UI/latest_news.dart';
+import 'package:kazo_city_media/UI/odekake_spot.dart';
 
 import 'UI/writer.dart';
 
@@ -95,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Center(
                   child: CarouselSlider(
                     options: CarouselOptions(animateToClosest: true, height: 500, viewportFraction: 0.8), 
-                    items: [1,2].map((e) => LatestNewsItem(key: null,)).toList()
+                    items: const [LatestNewsItem(key: null),OdekakeSpotItem(key: null)]
                   )
             ),
             Column(
