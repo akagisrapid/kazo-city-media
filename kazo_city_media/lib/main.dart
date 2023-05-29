@@ -19,10 +19,11 @@ import 'UI/writer.dart';
 //   runApp(const MyApp());
 // }
 void main() async => {
-  WidgetsFlutterBinding.ensureInitialized(),
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  ),
+  // 真っ白になるため一時的にコメントアウト
+  // WidgetsFlutterBinding.ensureInitialized(),
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // ),
   runApp(
       DevicePreview(
         builder : (context) => MyApp(),
