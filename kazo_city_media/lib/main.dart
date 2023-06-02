@@ -2,17 +2,17 @@
 
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:kazo_city_media/UI/category.dart';
-import 'package:kazo_city_media/UI/feature.dart';
+import 'package:kazo_city_media/UI/card/category.dart';
+import 'package:kazo_city_media/UI/card/feature.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:kazo_city_media/UI/latest_news.dart';
-import 'package:kazo_city_media/UI/explore_spot.dart';
+import 'package:kazo_city_media/UI/card/latest_news.dart';
+import 'package:kazo_city_media/UI/card/explore_spot.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'firebase_options.dart';
 
-import 'UI/writer.dart';
+import 'UI/card/writer.dart';
 
 
 // void main() {
