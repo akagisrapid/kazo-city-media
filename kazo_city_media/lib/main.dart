@@ -6,7 +6,7 @@ import 'package:kazo_city_media/UI/category.dart';
 import 'package:kazo_city_media/UI/feature.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:kazo_city_media/UI/latest_news.dart';
-import 'package:kazo_city_media/UI/odekake_spot.dart';
+import 'package:kazo_city_media/UI/explore_spot.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -18,17 +18,12 @@ import 'UI/writer.dart';
 // void main() {
 //   runApp(const MyApp());
 // }
-void main() async => {
-  WidgetsFlutterBinding.ensureInitialized(),
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  ),
-  runApp(
+void main() async => runApp(
       DevicePreview(
         builder : (context) => MyApp(),
       ),
     )
-};
+;
 
 
 class MyApp extends StatelessWidget {
@@ -109,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Center(
                   child: CarouselSlider(
                     options: CarouselOptions(animateToClosest: true, height: 500, viewportFraction: 0.8), 
-                    items: const [LatestNewsItem(key: null),OdekakeSpotItem(key: null)]
+                    items: const [LatestNewsItem(key: null),ExploreSpotItem(key: null)]
                   )
             ),
             Column(

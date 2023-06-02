@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class OdekakeSpotItem extends StatelessWidget{
-  const OdekakeSpotItem({super.key});
+class ExploreSpotItem extends StatelessWidget{
+  const ExploreSpotItem({super.key});
   @override
   Widget build(BuildContext context) {
   return Stack(
