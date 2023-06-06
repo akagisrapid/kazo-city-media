@@ -12,7 +12,8 @@ class ExploreSpotListItem extends StatelessWidget{
     var spotItems = exploreSpots.map((spot) => ExploreSpotItem(exploreSpot: spot)).toList();
     return Column(
       children: [ 
-        Expanded(child: GridView.count(crossAxisCount: 2, children: spotItems))
+        Text("hoge")
+        // Expanded(child: GridView.count(crossAxisCount: 2, children: spotItems))
       ]);
   }
 }
