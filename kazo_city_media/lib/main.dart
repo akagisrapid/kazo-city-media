@@ -41,6 +41,12 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+
+      routes: {
+        '/explore_spot_list': (context) => const ExploreSpotListItem(exploreSpots: [],),
+        // '/explore_spot': (context) => const ExploreSpotItem(exploreSpot: explore),
+      }
+      
     );
   }
 }

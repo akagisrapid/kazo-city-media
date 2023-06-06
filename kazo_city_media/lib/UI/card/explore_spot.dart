@@ -32,7 +32,7 @@ class ExploreSpotCarouselCardItem extends StatelessWidget{
                     ),
                   ),
                   onPressed: () {
-                    
+                    Navigator.pushNamed(context, '/explore_spot_list');
                   },
                   child: const Text('詳細'),
                 )),
