@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class ExploreSpotModel{
   final String name;
+  final String category;
   final String summary;
   final String url;
   final String youtubeUrl;
@@ -16,6 +17,7 @@ class ExploreSpotModel{
 
   ExploreSpotModel({
     required this.name,
+    required this.category,
     required this.summary,
     required this.url,
     required this.youtubeUrl,

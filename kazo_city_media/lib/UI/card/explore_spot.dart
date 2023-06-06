@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ExploreSpotItem extends StatelessWidget{
-  const ExploreSpotItem({super.key});
+class ExploreSpotCarouselCardItem extends StatelessWidget{
+  const ExploreSpotCarouselCardItem({super.key});
   @override
   Widget build(BuildContext context) {
   return Stack(
@@ -31,7 +31,9 @@ class ExploreSpotItem extends StatelessWidget{
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    
+                  },
                   child: const Text('詳細'),
                 )),
             Container(

@@ -10,6 +10,8 @@ import 'package:kazo_city_media/UI/card/explore_spot.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:kazo_city_media/UI/screen/explore_spot_list.dart';
+import 'UI/screen/explore_spot.dart';
 import 'firebase_options.dart';
 
 import 'UI/card/writer.dart';
@@ -54,6 +56,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   
+ var exploreSpots = [
+  ExploreSpotModel(name: "ふわとそう", category:"exploreSpot", summary: "lorem ipsum", url: "https://www.example.com", youtubeUrl: "", companyName: "（かぶ）ふわとそう", address: "aa", tel: "03-0000-0000", openingTime: "月曜〜土曜 10:00~17:00", holiday: "日曜", placeGeopoint: const GeoPoint(35.0, 135.0), note: "hogehogehogehoge"),
+];
   var categories = [
     CategoryModel(name: "おでかけ・スポット", imageUri: 'images/odekake_spot.png'),
     CategoryModel(name: "グルメ・カフェ", imageUri: 'images/gourmet_cafe.png'),
@@ -104,9 +109,16 @@ class _MyHomePageState extends State<MyHomePage> {
           Center(
                   child: CarouselSlider(
                     options: CarouselOptions(animateToClosest: true, height: 500, viewportFraction: 0.8), 
-                    items: const [LatestNewsItem(key: null),ExploreSpotItem(key: null)]
+                    items: const [LatestNewsItem(key: null),ExploreSpotCarouselCardItem(key: null)]
                   )
             ),
+          
+          // Column(children: [
+          //   ExploreSpotListItem(exploreSpots: exploreSpots)
+          // ],),
+          
+          
+          
             Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
