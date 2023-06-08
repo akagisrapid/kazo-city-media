@@ -7,7 +7,7 @@ class ExploreSpotCarouselCardItem extends StatelessWidget{
   return Stack(
     alignment: AlignmentDirectional.center, 
     children: [
-        Image.asset('images/wisteria.jpg',
+        Image.asset('images/wisteria.jpg', // 観覧車の画像が小さいので仮で藤の画像を使用
         fit: BoxFit.contain
         ),
         const Positioned(
