@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           Center(
                   child: CarouselSlider(
-                    options: CarouselOptions(animateToClosest: true, height: 500, viewportFraction: 0.8), 
+                    options: CarouselOptions(animateToClosest: true, height: 400, viewportFraction: 0.8), 
                     items: const [LatestNewsItem(key: null),ExploreSpotCarouselCardItem(key: null)]
                   )
             ),

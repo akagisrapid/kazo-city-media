@@ -7,7 +7,8 @@ class LatestNewsItem extends StatelessWidget{
   return Stack(
     alignment: AlignmentDirectional.center, 
     children: [
-        Image.asset('images/news.png'),
+        Image.asset('images/news.png', 
+        fit: BoxFit.contain,),
         const Positioned(
           top: 100,
           child: Text('新着News!!',

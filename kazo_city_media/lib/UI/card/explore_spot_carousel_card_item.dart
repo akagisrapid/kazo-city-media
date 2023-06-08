@@ -7,7 +7,9 @@ class ExploreSpotCarouselCardItem extends StatelessWidget{
   return Stack(
     alignment: AlignmentDirectional.center, 
     children: [
-        Image.asset('images/ferris_wheel.png'),
+        Image.asset('images/wisteria.jpg',
+        fit: BoxFit.contain
+        ),
         const Positioned(
           top: 100,
           child: Text('新着おでかけ・スポット',
