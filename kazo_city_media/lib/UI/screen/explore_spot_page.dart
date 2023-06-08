@@ -1,27 +1,92 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-import 'explore_spot.dart';
+class ExploreSpotModel{
+  final String name;
+  final String category;
+  final String summary;
+  final String url;
+  final String youtubeUrl;
+  final String companyName;
+  final String address;
+  final String tel;
+  final String openingTime;
+  final String holiday;
+  final GeoPoint placeGeopoint;
+  final String note;
 
-class ExploreSpotListPage extends StatelessWidget{
-  const ExploreSpotListPage({super.key});
+  ExploreSpotModel({
+    required this.name,
+    required this.category,
+    required this.summary,
+    required this.url,
+    required this.youtubeUrl,
+    required this.companyName,
+    required this.address,
+    required this.tel,
+    required this.openingTime,
+    required this.holiday,
+    required this.placeGeopoint,
+    required this.note,
+  });
+}
+
+class ExploreSpotPage extends StatelessWidget{
+  const ExploreSpotPage({super.key, required this.exploreSpot});
+  final ExploreSpotModel exploreSpot;
 
   @override
   Widget build(BuildContext context) {
-     var exploreSpots = [
-    ExploreSpotModel(name: "ふわとそう", category:"exploreSpot", summary: "lorem ipsum", url: "https://www.example.com", youtubeUrl: "", companyName: "（かぶ）ふわとそう", address: "aa", tel: "03-0000-0000", openingTime: "月曜〜土曜 10:00~17:00", holiday: "日曜", placeGeopoint: const GeoPoint(35.0, 135.0), note: "hogehogehogehoge"),
-     ];
-    var spotItems = exploreSpots.map((spot) => ExploreSpotItem(exploreSpot: spot)).toList();
-    return Scaffold(
+  return Scaffold(
       appBar: AppBar(
-        title: const Text("スポット一覧"),
+        title: Text(exploreSpot.name),
       ),
-      body: Column(
-        children: [
-          Text("hoge"),
-          Expanded(child: GridView.count(crossAxisCount: 2, children: spotItems))
+    body: Center(child: Row(
+      children:[
+        Column(
+          children: [
+            Text("${exploreSpot.name}について"),
+          Column(
+            children: [
+              const Text("会社名"),
+              Text(exploreSpot.companyName)
+            ],
+          ),
+          Column(
+            children: [
+              const Text("所在地"),
+              Text(exploreSpot.address)
+            ],
+          ),
+            Column(
+              children: [
+                const Text("電話番号"),
+                Text(exploreSpot.tel)
+              ],
+            ),
+            Column(
+              children: [
+                const Text("営業時間"),
+                Text(exploreSpot.openingTime)
+                ],
+            ),
+            Column(
+              children: [
+                const Text("定休日"),
+                Text(exploreSpot.holiday)
+              ],
+            ),
+            Column(
+              children: [
+                const Text("Web"),
+                Text(exploreSpot.note)
+              ],
+            )
         ],
-      ),
-    );
+        )
+      ]
+    )
+    )
+  );
   }
 }

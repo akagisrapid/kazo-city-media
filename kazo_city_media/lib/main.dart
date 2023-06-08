@@ -11,8 +11,8 @@ import 'package:kazo_city_media/UI/card/explore_spot.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:kazo_city_media/UI/screen/explore_spot_list.dart';
-import 'package:kazo_city_media/UI/screen/explore_spot_page.dart';
-import 'UI/screen/explore_spot.dart';
+import 'package:kazo_city_media/UI/screen/explore_spot_list_page.dart';
+import 'UI/screen/explore_spot_page.dart';
 import 'firebase_options.dart';
 
 import 'UI/card/writer.dart';
@@ -30,11 +30,14 @@ void main() async => runApp(
 
 
 class MyApp extends StatelessWidget {
+
   const MyApp({super.key});
+ 
+  
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {   
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -44,8 +47,8 @@ class MyApp extends StatelessWidget {
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
 
       routes: {
-        '/explore_spot_list': (context) => const ExploreSpotListPage()
-        // '/explore_spot': (context) => const ExploreSpotItem(exploreSpot: explore),
+        '/explore_spot_list': (context) => const ExploreSpotListPage(),
+        // '/explore_spot': (context) => const ExploreSpotPage(exploreSpot: ExploreSpotModel(),),
       }
       
     );
