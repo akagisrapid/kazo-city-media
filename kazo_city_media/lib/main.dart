@@ -5,8 +5,8 @@ import 'package:device_preview/device_preview.dart';
 import 'package:kazo_city_media/UI/card/category.dart';
 import 'package:kazo_city_media/UI/card/feature.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:kazo_city_media/UI/card/latest_news.dart';
-import 'package:kazo_city_media/UI/card/explore_spot.dart';
+import 'package:kazo_city_media/UI/card/latest_news_carousel_card_item.dart';
+import 'package:kazo_city_media/UI/card/explore_spot_carousel_card_item.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
