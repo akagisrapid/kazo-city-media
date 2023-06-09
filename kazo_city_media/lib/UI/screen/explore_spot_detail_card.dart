@@ -24,21 +24,29 @@ class ExploreSpotDetailCardItem extends StatelessWidget {
           Text(exploreSpot.summary,
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 15, color: Colors.white)),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Container(
-                alignment: Alignment.bottomCenter,
-                child: ElevatedButton(
+           Container(
+            height: 100,
+            alignment: Alignment.center,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center, 
+               children: [
+                const Spacer(),
+                Container(
+                alignment: Alignment.center,
+                child: ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      backgroundColor: Colors.redAccent,
-                      textStyle: const TextStyle(color: Colors.white)),
-                  onPressed: () {},
-                  child: const Text('再生'),
-                )),
+                    backgroundColor: Colors.redAccent,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: ()=>{},
+                  icon: const Icon(Icons.play_arrow), label: const Text("再生"))
+                ),
+                const Spacer(),
+                
             Container(
-                alignment: Alignment.bottomCenter,
+                alignment: Alignment.center,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
@@ -48,7 +56,9 @@ class ExploreSpotDetailCardItem extends StatelessWidget {
                   onPressed: () {},
                   child: const Text('Webサイトへ'),
                 )),
+                const Spacer(),
           ])
+           )
         ]));
   }
 }
