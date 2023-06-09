@@ -58,7 +58,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '774373939139',
     projectId: 'kazo-city-media',
     storageBucket: 'kazo-city-media.appspot.com',
-    iosClientId: '774373939139-qbktdufc6p6duu4460dkdhjhqobn303p.apps.googleusercontent.com',
+    iosClientId:
+        '774373939139-qbktdufc6p6duu4460dkdhjhqobn303p.apps.googleusercontent.com',
     iosBundleId: 'com.example.kazoCityMedia',
   );
 }
