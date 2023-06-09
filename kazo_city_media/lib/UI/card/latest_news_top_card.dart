@@ -7,8 +7,12 @@ class LatestNewsItem extends StatelessWidget {
     return  Container(
       decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('images/news.png'), fit: BoxFit.cover)),
+              image: AssetImage('images/news.png'), fit: BoxFit.cover
+              ),
+              borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
       alignment: AlignmentDirectional.center, 
+      
       child: Column(
         children: [
         const Text('新着News!!',
