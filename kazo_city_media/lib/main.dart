@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:kazo_city_media/UI/card/category.dart';
-import 'package:kazo_city_media/UI/card/feature.dart';
+import 'package:kazo_city_media/UI/card/category_main_card.dart';
+import 'package:kazo_city_media/UI/card/feature_main_card.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:kazo_city_media/UI/card/latest_news_carousel_card_item.dart';
-import 'package:kazo_city_media/UI/card/explore_spot_carousel_card_item.dart';
+import 'package:kazo_city_media/UI/card/latest_news_top_card.dart';
+import 'package:kazo_city_media/UI/card/explore_spot_top_card.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -15,7 +15,7 @@ import 'package:kazo_city_media/UI/screen/explore_spot_list_page.dart';
 import 'UI/screen/explore_spot_page.dart';
 import 'firebase_options.dart';
 
-import 'UI/card/writer.dart';
+import 'UI/card/writer_main_card.dart';
 
 // void main() {
 //   runApp(const MyApp());

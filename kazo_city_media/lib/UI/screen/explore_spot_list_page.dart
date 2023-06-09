@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:kazo_city_media/UI/screen/explore_spot_card.dart';
+import 'package:kazo_city_media/UI/card/explore_spot_list_card.dart';
 
 import 'explore_spot_page.dart';
 
