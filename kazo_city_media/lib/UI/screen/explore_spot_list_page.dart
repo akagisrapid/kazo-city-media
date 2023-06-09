@@ -2,10 +2,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:kazo_city_media/UI/card/explore_spot_list_card.dart';
 
+import '../card/explore_spot_top_card.dart';
 import 'explore_spot_page.dart';
 
 class ExploreSpotListPage extends StatelessWidget {
-  const ExploreSpotListPage({super.key});
+
+  const ExploreSpotListPage({super.key, required this.categoryName});
+  final String categoryName;
 
   @override
   Widget build(BuildContext context) {
@@ -57,12 +60,13 @@ class ExploreSpotListPage extends StatelessWidget {
         .toList();
     return Scaffold(
       appBar: AppBar(
-        title: const Text("スポット一覧"),
+        title: Text(categoryName),
       ),
       body: Column(
         children: [
+          const ExploreSpotCarouselCardItem(key: null),
           Expanded(
-              child: GridView.count(crossAxisCount: 2, children: spotItems))
+              child: GridView.count(crossAxisCount: 3, children: spotItems))
         ],
       ),
     );
