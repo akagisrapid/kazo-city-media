@@ -1,5 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:kazo_city_media/UI/card/latest_news_carousel_card_item.dart';
+import 'package:kazo_city_media/UI/screen/explore_spot_card.dart';
+
+import 'explore_spot_detail_card.dart';
 
 class ExploreSpotModel{
   final String name;
@@ -41,48 +45,15 @@ class ExploreSpotPage extends StatelessWidget{
       appBar: AppBar(
         title: Text(exploreSpot.name),
       ),
-    body: Center(child: Row(
+    body: Center(
+      child: Row(
       children:[
-        Column(
-          children: [
-            Text("${exploreSpot.name}について"),
-          Column(
-            children: [
-              const Text("会社名"),
-              Text(exploreSpot.companyName)
-            ],
-          ),
-          Column(
-            children: [
-              const Text("所在地"),
-              Text(exploreSpot.address)
-            ],
-          ),
-            Column(
-              children: [
-                const Text("電話番号"),
-                Text(exploreSpot.tel)
-              ],
-            ),
-            Column(
-              children: [
-                const Text("営業時間"),
-                Text(exploreSpot.openingTime)
-                ],
-            ),
-            Column(
-              children: [
-                const Text("定休日"),
-                Text(exploreSpot.holiday)
-              ],
-            ),
-            Column(
-              children: [
-                const Text("Web"),
-                Text(exploreSpot.note)
-              ],
-            )
-        ],
+        Flexible(
+          child:Column(children:[
+            ExploreSpotDetailCardItem(exploreSpot: exploreSpot),
+         
+          ]
+          )
         )
       ]
     )
