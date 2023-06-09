@@ -117,15 +117,9 @@ class _MyHomePageState extends State<MyHomePage> {
             child: SingleChildScrollView(
           child: Column(children: [
             Center(
-                child: CarouselSlider(
-                    options: CarouselOptions(
-                        animateToClosest: true,
-                        height: 400,
-                        viewportFraction: 0.8),
-                    items: const [
+                child: 
                   LatestNewsItem(key: null),
-                  ExploreSpotCarouselCardItem(key: null)
-                ])),
+                ),
 
             // Column(children: [
             //   ExploreSpotListItem(exploreSpots: exploreSpots)
