@@ -1,9 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:kazo_city_media/UI/card/latest_news_carousel_card_item.dart';
-import 'package:kazo_city_media/UI/screen/explore_spot_card.dart';
 
-import 'explore_spot_detail_card.dart';
+import '../card/explore_spot_detail_top_card.dart';
 
 class ExploreSpotModel {
   final String name;
