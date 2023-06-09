@@ -1,7 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:kazo_city_media/UI/card/latest_news_top_card.dart';
-import 'package:kazo_city_media/UI/card/explore_spot_list_card.dart';
 
 import '../card/explore_spot_detail_top_card.dart';
 
