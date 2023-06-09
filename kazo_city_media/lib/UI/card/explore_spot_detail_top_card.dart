@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'explore_spot_page.dart';
+import '../screen/explore_spot_page.dart';
 
 class ExploreSpotDetailCardItem extends StatelessWidget {
   final ExploreSpotModel exploreSpot;
