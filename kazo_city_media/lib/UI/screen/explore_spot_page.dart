@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:kazo_city_media/UI/card/explore_spot_map_card.dart';
 
 import '../card/explore_spot_detail_top_card.dart';
 
@@ -82,6 +84,7 @@ class ExploreSpotPage extends StatelessWidget {
                     // リンク
                   },
                 ),
+                Container(child: MapSample(),height:200),
                 Container(
                   alignment: Alignment.centerLeft,
                   child: const Text("取材記事", style: TextStyle(fontSize: 20)),
