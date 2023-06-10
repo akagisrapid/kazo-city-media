@@ -62,13 +62,16 @@ class ExploreSpotListPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(categoryName),
       ),
-      body: Column(
+      body: Container(
+        padding: const EdgeInsets.all(30.0),
+        child: Column(
         children: [
           const ExploreSpotCarouselCardItem(key: null),
           Expanded(
               child: GridView.count(crossAxisCount: 3, children: spotItems))
         ],
       ),
+      )
     );
   }
 }
