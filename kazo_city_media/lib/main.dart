@@ -13,17 +13,17 @@ import 'package:kazo_city_media/UI/screen/explore_spot_list_page.dart';
 import 'UI/card/writer_main_card.dart';
 
 void main() async => {
-  // 真っ白になるため一時的にコメントアウト
-  // WidgetsFlutterBinding.ensureInitialized(),
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // ),
-  runApp(
-      DevicePreview(
-        builder: (context) => MyApp(),
-      ),
-  )
-};
+      // 真っ白になるため一時的にコメントアウト
+      // WidgetsFlutterBinding.ensureInitialized(),
+      // await Firebase.initializeApp(
+      //   options: DefaultFirebaseOptions.currentPlatform,
+      // ),
+      runApp(
+        DevicePreview(
+          builder: (context) => MyApp(),
+        ),
+      )
+    };
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -117,9 +117,8 @@ class _MyHomePageState extends State<MyHomePage> {
             child: SingleChildScrollView(
           child: Column(children: [
             Center(
-                child: 
-                  LatestNewsItem(key: null),
-                ),
+              child: LatestNewsItem(key: null),
+            ),
 
             // Column(children: [
             //   ExploreSpotListItem(exploreSpots: exploreSpots)

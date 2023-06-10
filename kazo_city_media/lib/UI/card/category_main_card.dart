@@ -14,26 +14,25 @@ class CategoryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage(category.imageUri)
-          , fit: BoxFit.cover)),
-          alignment: AlignmentDirectional.center,
-          child: InkWell(
-            onTap:(){
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage(category.imageUri), fit: BoxFit.cover)),
+        alignment: AlignmentDirectional.center,
+        child: InkWell(
+            onTap: () {
               Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                    ExploreSpotListPage(categoryName: category.name)));
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          ExploreSpotListPage(categoryName: category.name)));
             },
             child: Container(
-            height: 200,
-            width: 150,
-            alignment: Alignment.bottomCenter,
-            child:Text(
-              category.name,
-              style: const TextStyle(color: Colors.white),)
-          )
-    ));
+                height: 200,
+                width: 150,
+                alignment: Alignment.bottomCenter,
+                child: Text(
+                  category.name,
+                  style: const TextStyle(color: Colors.white),
+                ))));
   }
 }
