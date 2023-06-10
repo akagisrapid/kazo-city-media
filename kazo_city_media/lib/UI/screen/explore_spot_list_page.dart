@@ -26,7 +26,7 @@ class ExploreSpotListPage extends StatelessWidget {
           openingTime: "月曜〜土曜 10:00~17:00",
           holiday: "日曜",
           placeGeopoint: const GeoPoint(35.0, 135.0),
-          note: "hogehogehogehoge"),
+          note: "Voluptate incididunt cillum exercitation consectetur aliqua qui veniam fugiat laboris aliqua magna. Elit dolor non sint excepteur amet aute veniam est. Nisi commodo cupidatat nulla amet id voluptate incididunt nisi qui anim. Voluptate in cupidatat do ex exercitation culpa sit cillum ullamco in sint tempor ipsum aliquip. Ullamco non pariatur aliqua exercitation enim occaecat sunt eiusmod nulla Lorem magna ullamco laborum. Eu qui duis ipsum eiusmod nisi esse et. Dolor quis sunt voluptate culpa eiusmod anim qui labore consequat sint laboris laboris laborum anim."),
       ExploreSpotModel(
           name: "加須未来館",
           category: "exploreSpot",

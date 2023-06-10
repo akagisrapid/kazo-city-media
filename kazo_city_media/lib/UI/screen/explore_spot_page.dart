@@ -43,12 +43,57 @@ class ExploreSpotPage extends StatelessWidget {
         appBar: AppBar(
           title: Text(exploreSpot.name),
         ),
-        body: Center(
+        body: SingleChildScrollView(
+          padding: const EdgeInsets.all(30.0),
             child: Row(children: [
-          Flexible(
-              child: Column(children: [
-            ExploreSpotDetailCardItem(exploreSpot: exploreSpot),
-          ]))
+              Flexible(
+              child: Column(
+              children: [
+                ExploreSpotDetailCardItem(exploreSpot: exploreSpot),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  child: Text("${exploreSpot.name}について",
+                  style: const TextStyle(fontSize: 20)),
+                ),
+                ListTile(
+                  leading: const Text("会社名", style: TextStyle(fontSize: 15)),
+                  title:  Text(exploreSpot.companyName, style: const TextStyle(fontSize: 15))
+                ),
+                ListTile(
+                  leading: const Text("所在地",style: TextStyle(fontSize: 15)),
+                  title: Text(exploreSpot.address,style: const TextStyle(fontSize: 15))
+                ),
+                ListTile(
+                  leading: const Text("電話番号",style: TextStyle(fontSize: 15)),
+                  title: Text(exploreSpot.tel,style: const TextStyle(fontSize: 15))
+                ),
+                ListTile(
+                  leading: const Text("営業時間",style: TextStyle(fontSize: 15)),
+                  title: Text(exploreSpot.address,style: const TextStyle(fontSize: 15))
+                ),
+                ListTile(
+                  leading: const Text("定休日",style: TextStyle(fontSize: 15)),
+                  title: Text(exploreSpot.holiday,style: const TextStyle(fontSize: 15))
+                ),
+                ListTile(
+                  leading: const Text("Web",style: TextStyle(fontSize: 15)),
+                  title: Text(exploreSpot.url,style: const TextStyle(fontSize: 15)),
+                  onTap: () {
+                        // リンク
+                  },
+                ),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  child: const Text("取材記事",
+                    style: TextStyle(fontSize: 20)
+                  ),
+                ),
+                Text(exploreSpot.note),
+
+
+              ]
+              )
+          )
         ])));
   }
 }
