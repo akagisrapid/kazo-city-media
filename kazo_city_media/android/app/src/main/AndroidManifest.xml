@@ -3,6 +3,9 @@
         android:label="kazo_city_media"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <!-- TODO: Add your Google Maps API key here -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyAPou7ZnF1Z_x4p2Kp4_GiTGHD7oPW9gbs"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
