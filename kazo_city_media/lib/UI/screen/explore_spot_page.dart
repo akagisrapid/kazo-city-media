@@ -84,7 +84,7 @@ class ExploreSpotPage extends StatelessWidget {
                     // リンク
                   },
                 ),
-                Container(child: MapSample(),height:200),
+                SizedBox(height:200, child: MapSample(exploreSpot: exploreSpot)),
                 Container(
                   alignment: Alignment.centerLeft,
                   child: const Text("取材記事", style: TextStyle(fontSize: 20)),
